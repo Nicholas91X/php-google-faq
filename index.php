@@ -60,13 +60,35 @@ $faq = [
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <title>Google Faq</title>
 </head>
 <body>
-    <?php
-    foreach($faq as $info) {
-        echo "{$info['question']} <br> {$info['answer']} <br>";
-    }
-    ?>
+    <header>
+        <div class="left-side">
+            <div class="menu">
+                <img src="img/downloa.png" alt="">
+            </div>
+            <div class="title"><h3>Domande Frequenti</h3></div>
+        </div>
+        <div class="right-side">
+            <div class="info">
+                <img src="img/grid-small-512_2048x2048.png" alt="">
+            </div>
+            <div class="profile">
+                <img src="img/computer-icons-user-profile-avatar-png-favpng-6jJk1WU2YkTBLjFs4ZwueE8Ub.jpg" alt="">
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <?php
+        foreach($faq as $info) {
+            echo "{$info['question']} <br> {$info['answer']} <br>";
+        }
+        ?>
+    </div>
 </body>
 </html>
